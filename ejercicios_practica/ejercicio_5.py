@@ -10,6 +10,11 @@
 # Ejercicios con comprensión de listas
 
 
+from re import X
+from turtle import xcor
+import xdrlib
+
+
 if __name__ == '__main__':
     print("Bienvenidos a otra clase de Inove con Python")
     
@@ -27,8 +32,10 @@ if __name__ == '__main__':
     # los ID entre el 1 y 10.
     # De la lista resultante informar cuantas personas/personal
     # comprendido en dicho rango pasó por ese molinete
-
-    # personal_1_10 = [.....]
+    
+    personal_1_10 = [x for x in accesos if x>1 and x<= 10]
+    
+    print('Accedieron hoy', len(personal_1_10), 'y fueron los siguientes: ', personal_1_10)
 
     # 2)
     # Generar una lista por comprensión de la listas "accesos"
@@ -40,6 +47,8 @@ if __name__ == '__main__':
     # TIP: Utilizar el operador "in" para chequear si un ID de accesos está
     # dentro de "id_validos"
 
-    # personal_valido = [.....]
+    personal_valido = [x for x in personal_1_10 if x in id_validos]
+    print(personal_valido)
+    #me tiene que dar 3 - 4 - 7
 
     print("terminamos")
