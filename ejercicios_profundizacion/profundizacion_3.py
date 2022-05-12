@@ -62,5 +62,8 @@ if __name__ == '__main__':
     # A partir de aquí escriba el código que resuelve el enunciado
     # Leer el enunciado con atención y consultar cualquier duda
 
+    lista_compra_productos = [producto.get(x, 'Nan') for x in lista_compra_id]       
+    print(lista_compra_productos)
+    # Usé este ejemplo: http://www.w3big.com/es/python/att-dictionary-get.html
 
     print("terminamos")
