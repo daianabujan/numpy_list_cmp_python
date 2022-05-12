@@ -33,7 +33,7 @@ if __name__ == '__main__':
     # De la lista resultante informar cuantas personas/personal
     # comprendido en dicho rango pasó por ese molinete
     
-    personal_1_10 = [x for x in accesos if x>1 and x<= 10]
+    personal_1_10 = [x for x in accesos if x>=1 and x<= 10]
     
     print('Accedieron hoy', len(personal_1_10), 'y fueron los siguientes: ', personal_1_10)
 
@@ -49,6 +49,5 @@ if __name__ == '__main__':
 
     personal_valido = [x for x in personal_1_10 if x in id_validos]
     print(personal_valido)
-    #me tiene que dar 3 - 4 - 7
 
     print("terminamos")

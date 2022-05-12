@@ -35,7 +35,7 @@ if __name__ == '__main__':
     # del 0 al 10 (como el ejer anterior) pero que cada
     # elemento lo multipliquen x5.
 
-    tabla_5 = [x*5 for x in range(11)]
+    tabla_5 = [x*5 for x in lista_0_10]
     print(tabla_5)
     
     # 3)
